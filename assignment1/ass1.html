@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Layout</title>
+    <style>
+        body {
+            margin: 10;
+            font-family: Arial, sans-serif;
+            border: 2px solid black;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f0f0f0;
+            padding: 5px;
+            height:auto;
+            width:99%;
+            border: 2px solid black;
+        }
+        .header img {
+            width: 80px;
+            height: 50px;
+          
+            border: 1px solid black;
+        }
+        .header div {
+            display: flex;
+            align-items: center;
+        }
+        .header div a {
+            margin-left: 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            border: 1px solid black;
+            padding: 5px;
+        }
+        .header a:last-child {
+            border: 1px solid black;
+            padding: 5px;
+        }
+        .welcome-message {
+            position: relative;
+            text-align: center;
+            color: rgb(31, 12, 235);
+            border: 1px solid black;
+            height: 50vh; /* Adjust height relative to viewport */
+            min-height: 300px; /* Ensure a minimum height */
+        }
+        .welcome-message img {
+            width: 99%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.5;
+        }
+        .welcome-message h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            padding: 10px;
+        }
+        .content div {
+            background: #f0f0f0;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        .content img {
+            width: 100%;
+            height: auto;
+            border: 1px solid black;
+        }
+        .video {
+            text-align: center;
+            padding: 2px;
+            max-width: 99%;
+            max-height: 100%;
+            border: 1px solid black;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background: #f0f0f0;
+            border: 1px solid black;
+        }
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div>
+    <div class="header">
+        <div>
+            <img src="Audi-Symbol.png" alt="Logo">
+            <a href="#">audi official.com</a>
+        </div>
+        <a href="#">CONTACT: +1-123977</a>
+    </div>
+
+    <div class="welcome-message">
+        <img src="audi.avif" alt="Background Image">
+        <h1>WELCOME TO<br> official page</h1>
+    </div>
+
+    <div class="content">
+        <div>
+            <p>Audi AG is a German automotive manufacturer of luxury vehicles headquartered in Ingolstadt, Bavaria, Germany. A subsidiary of the Volkswagen Group, Audi produces vehicles in nine production facilities worldwide.</p>
+        </div>
+        <div>
+            <img src="audi1.jpeg" alt="Image 1">
+        </div>
+        <div>
+            <img src="audi2.webp" alt="Image 2">
+        </div>
+        <div>
+            <p>The company name is based on the Latin translation of the surname of the founder, August Horch. Horch, meaning 'listen', becomes audi in Latin. The four rings of the Audi logo each represent one of four car companies that banded together to create Audi's predecessor company, Auto Union. Audi's slogan is Vorsprung durch Technik, which is translated as 'Progress through Technology'. Audi, along with German brands BMW and Mercedes-Benz, is among the best-selling luxury automobile brands in the world.</p>
+        </div>
+    </div>
+
+    <div class="video">
+        <iframe width="315" height="560" src="https://www.youtube.com/embed/fYN_r8iiEAE" title="2023 Audi RS7 Sportback (600hp)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+    <div class="footer">
+    <p>ALL RIGHTS RESERVED</p>
+</div>
+</div>
+</div>
+</body>
+</html>
